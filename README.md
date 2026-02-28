@@ -7,7 +7,7 @@ Developed using Logistic Regression and deployed with Streamlit.
 ---
 
 ## 🚀 Live Demo
-(You can add your deployed link here later)
+https://heartstrockprediction.streamlit.app/
 
 ---
 
