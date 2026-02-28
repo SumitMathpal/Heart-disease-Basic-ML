@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 import time
 
 st.set_page_config(
@@ -35,9 +35,16 @@ body {
 """, unsafe_allow_html=True)
 
 # ================= LOAD MODEL =================
-model = joblib.load("Logistic_reg.pkl")
-scaler = joblib.load("scaler.pkl")
-expected_columns = joblib.load("columns.pkl")
+
+
+with open("Logistic_reg.pkl", "rb") as f:
+    model = pickle.load(f)
+
+with open("scaler.pkl", "rb") as f:
+    scaler = pickle.load(f)
+
+with open("columns.pkl", "rb") as f:
+    expected_columns = pickle.load(f)
 
 # ================= SIDEBAR =================
 with st.sidebar:
