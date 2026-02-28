@@ -56,3 +56,10 @@ The model provides:
 ---
 
 ## 📂 Project Structure
+heart-risk-predictor/
+│
+├── app.py
+├── Logistic_reg.pkl
+├── scaler.pkl
+├── columns.pkl
+└── README.md
